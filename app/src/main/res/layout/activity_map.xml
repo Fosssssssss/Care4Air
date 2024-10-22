@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    tools:context=".MapActivity">
+
+    <!--Wyświetlanie mapy
+    Wyświetla mapę ale calego swiata plus nie wiem za bardzo jak dziala, czat pomógł-->
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!--Przysick, którym zatwierdza sie zaznaczony adres i powraca sie do ekranu glownego
+    Na razie nie zatwierdza adresu, ale wraca do ekranu głównegoi-->
+    <Button
+        android:id="@+id/_backFromMap"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="@+id/map"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:text="Zatwierdź"
+        android:backgroundTint="#0542a3"
+        tools:ignore="NotSibling" />
+</RelativeLayout>
